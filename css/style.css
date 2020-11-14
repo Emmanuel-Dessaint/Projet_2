@@ -1,8 +1,6 @@
 @font-face {
     font-family: 'raleway';
     src: url(polices/static/Raleway-Regular.ttf);
-    /* font-family: "raleway_bold";
-    src: url(polices/static/Raleway-Bold.ttf); */
 }
 
 body {
@@ -493,14 +491,6 @@ footer li {
     footer ul {
         margin-left: -150px;
     }
-
-
-    /* .menu{
-        display: flex;
-        justify-content: flex-end;
-    } */
-
-
 }
 
 @media only screen and (min-width: 750px) and (max-width: 1100px) {
@@ -537,7 +527,32 @@ footer li {
         box-shadow: 5px 5px 8px rgb(202, 193, 193);
         width: 20em;
     }
-
+    .titre_populaire{
+        display: flex;
+        justify-content: center;
+    }
+    .populaire_responsive{
+        display: flex;
+        justify-content: center;
+    }
+    #hebergement h2{
+        
+        text-align: center;
+    }
+    .hebergement_ligne{
+        justify-content: center;
+    }
+    .afficher_plus {
+        display: flex;
+        margin-bottom: 40px;
+        font-size: 1em;
+    }
+    .afficher_plus p{
+        text-align: right;
+        margin-left: auto;
+        font-weight: 900;
+        margin-right: 20px;
+    }
     .menu_sinscrire1 {
         display: none;
     }
@@ -577,21 +592,21 @@ footer li {
         justify-content: center;    
     }
     .activités_image1 img, .activités_image2 img{
-          
         height: auto;
     }
-   
-
-
-    /* .menu{
-        display: flex;
-        justify-content: flex-end;
-    } */
+    footer {
+        margin-left: 0px;
+        margin-right: 0px;
+    }  
 }
 
 @media all and (max-width: 750px) {
 
-    .activités_image {
+    .activités_image1, .activités_image2{
+        flex-direction: column;
+    }
+    #activités{
+        display: flex;
         flex-direction: column;
     }
 
@@ -822,4 +837,5 @@ footer li {
     footer {
         margin: 30px 0px 0px 0px;
     }
+    
 }
