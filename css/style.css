@@ -354,12 +354,17 @@ Section ul {
 }
 
 /* ---------------------------------------------ACTIVITES-----------------------------------*/
-#activités h2 {
+.titre_activités{
     margin-bottom: 0px;
+    margin-top: 25px;
     font-size: larger;
 }
+#activités{
+    display: flex;
+    flex-direction: row;
+}
 
-.activités_image {
+.activités_image1, .activités_image2{
     display: flex;
     flex-direction: row;
 }
@@ -448,7 +453,7 @@ footer ul {
     list-style-type: none;
     padding-bottom: 35px;
     padding-top: 25px;
-    margin-left: -150px;
+    margin-left: -15px;
 }
 
 footer li {
@@ -485,6 +490,9 @@ footer li {
         display: flex;
         align-items: baseline;
     }
+    footer ul {
+        margin-left: -150px;
+    }
 
 
     /* .menu{
@@ -496,10 +504,28 @@ footer li {
 }
 
 @media only screen and (min-width: 750px) and (max-width: 1100px) {
+    #bloc_page{
+        width: 100%;
+    }
+    nav{
+        display: flex;
+        justify-content: center;
+    }
     .label_loupe {
         display: none;
     }
-
+    .div_filtres {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -10px;
+    }
+    .div_a {
+        margin: 5px;
+    }
+    #activités{
+        display: flex;
+        flex-direction: column;
+    }
     .populaire_1,
     .populaire_2,
     .populaire_3 {
@@ -529,16 +555,33 @@ footer li {
 
     section {
         display: flex;
-        flex-direction: row;
+        flex-direction: column-reverse;
+    }
+    .populaire_responsive{
+        display: flex;
+        flex-wrap: wrap;
     }
 
     .populaire {
         background-color: white;
     }
-
-    .activités_image {
-        width: auto;
+    .titre_activités{
+        display: flex;
+        justify-content: center;    
     }
+    .activités_image1{
+        margin-left: 20px;
+    }
+    .activités_image1, .activités_image2{
+        display: flex;
+        justify-content: center;    
+    }
+    .activités_image1 img, .activités_image2 img{
+          
+        height: auto;
+    }
+   
+
 
     /* .menu{
         display: flex;
