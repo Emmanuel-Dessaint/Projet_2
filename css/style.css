@@ -291,11 +291,12 @@ Section ul {
     font-size: 0.7em;
 }
 
-.afficher_plus {
+.afficher_plus p{
     margin-left: 45px;
     margin-bottom: 40px;
     font-size: 1em;
     display: inline-flex;
+    font-weight: 900;
 }
 
 /* ---------------------------------------------POPULAIRE----------------------------------------*/
@@ -735,13 +736,14 @@ footer li {
     .hebergement_ligne {
         display: flex;
         flex-direction: column;
+        background-color: white;
     }
 
     .hebergement_ligne a {
         width: 100%;
     }
 
-    .hebergement {
+    #hebergement {
         background-color: white;
         border-radius: 0px;
         margin-right: 0px;
@@ -753,7 +755,7 @@ footer li {
     }
 
     .hebergement_ligne a {
-        background-color: white;
+        background-color: rgb(255, 255, 255);
         margin-right: 0px;
         margin-bottom: 10px;
         border-radius: 20px;
@@ -779,7 +781,7 @@ footer li {
     }
 
     .populaire {
-        background-color: #ffffff !important;
+        background-color: #F2F2F2;
         border-radius: 0;
         margin: 0px;
     }
