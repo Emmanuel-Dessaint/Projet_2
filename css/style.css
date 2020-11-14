@@ -243,7 +243,7 @@ Section ul {
 .hebergement_ligne {
     display: flex;
     flex-direction: row;
-    padding-inline-start: 25px;
+    padding-left: 25px;
 }
 
 .hebergement_ligne a {
@@ -596,7 +596,6 @@ footer li {
         border: 0px;
         font-size: medium;
         font-weight: bold;
-        padding-left: -5em;
     }
 
     .label_rechercher {
